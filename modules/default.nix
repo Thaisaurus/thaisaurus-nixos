@@ -39,5 +39,7 @@
 
   security.sudo.wheelNeedsPassword = false;
 
+  catppuccin.enable = true;
+
   system.stateVersion = "25.05";
 }

@@ -28,6 +28,7 @@
       modules = [
         inputs.disko.nixosModules.disko
         inputs.home-manager.nixosModules.home-manager
+        inputs.catppuccin.nixosModules.catppuccin
         (inputs.self + /modules)
         { networking.hostName = "thaisaurus-prod"; }
       ];
