@@ -1,5 +1,6 @@
 {
   imports = [
+    ./git.nix
     ./home-programs.nix
     ./hx.nix
     ./nu.nix
