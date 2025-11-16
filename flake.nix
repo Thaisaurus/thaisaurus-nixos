@@ -30,6 +30,9 @@
         inputs.home-manager.nixosModules.home-manager
         (inputs.self + /modules)
       ];
+      specialArgs = {
+        inherit inputs;
+      };
     };
   };
 
