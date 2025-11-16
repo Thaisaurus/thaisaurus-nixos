@@ -3,6 +3,7 @@
     ./disko.nix
     ./docker.nix
     ./user.nix
+    ./hardware-configuration.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -13,4 +14,11 @@
       "nix-command"
     ];
   };
+
+  boot.loader = {
+    systemd-boot.enable = true;
+    efi.canTouchEfiVariables = true;
+  };
+
+  system.stateVersion = "25.05";
 }
