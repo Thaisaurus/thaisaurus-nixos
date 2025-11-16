@@ -8,6 +8,7 @@
       enable = true;
       configFile.text = lib.mkAfter ''
         $env.config.show_banner = false;
+        alias l = ls -la;
       '';
     };
     carapace = {
@@ -22,7 +23,7 @@
       settings = {
         add_newline = false;
         character = {
-          success_symbol = "[ℕ](green)";
+          success_symbol = "[𝕋𝕙](green)";
           error_symbol = "[✗](bold red)";
         };
         line_break.disabled = true;
@@ -32,5 +33,9 @@
         };
       };
     };
+  };
+  zoxide = {
+    enable = true;
+    enableNushellIntegration = true;
   };
 }
