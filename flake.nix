@@ -29,6 +29,7 @@
         inputs.disko.nixosModules.disko
         inputs.home-manager.nixosModules.home-manager
         (inputs.self + /modules)
+        { networking.hostName = "thaisaurus-prod"; }
       ];
       specialArgs = {
         inherit inputs;
